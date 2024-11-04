@@ -1,0 +1,239 @@
+/* AdminBooks.css */
+
+/* AdminBooks Container */
+.admin-books-container {
+  background-color: #f7f7f7; /* Background color for the book section */
+  color: #333; /* Text color */
+  margin-left: 250px; 
+  min-height: 100vh;/* Adjust for the sidebar width */
+  padding: 20px;
+  overflow-x: scroll;
+}
+
+/* Page Title */
+.admin-books-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Add Book Button */
+.add-book-button {
+  background-color: #ff9900; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out; /* Add transition effect */
+}
+
+.add-book-button:hover {
+  background-color: #ff6600; /* Hover background color */
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Add Book Form */
+.add-book-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out; /* Add transition effect */
+}
+
+.add-book-form:hover {
+  transform: scale(1.01); /* Slight scale up on hover */
+}
+
+.add-book-form h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.add-book-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-book-form input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-book-form button[type="submit"],
+.add-book-form button[type="button"] {
+  background-color: #ff9900;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out; /* Add transition effect */
+}
+
+.add-book-form button[type="submit"]:hover,
+.add-book-form button[type="button"]:hover {
+  background-color: #ff6600; /* Hover background color */
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Book List Table */
+.book-list-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.book-list-table th,
+.book-list-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Edit and Delete Buttons */
+.edit-button,
+.delete-button {
+  background-color: #ff9900;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out; /* Add transition effect */
+}
+
+.edit-button:hover,
+.delete-button:hover {
+  background-color: #ff6600; /* Hover background color */
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Book Poster */
+.book-poster {
+  max-width: 100px; /* Adjust as needed */
+  height: auto;
+  transition: transform 0.2s ease-in-out; /* Add transition effect */
+}
+
+.book-poster:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+/* PDF Link */
+.book-pdf-link {
+  color: #007bff; /* Link color */
+  text-decoration: underline;
+  cursor: pointer;
+  transition: text-decoration 0.3s ease; /* Add transition effect */
+}
+
+.book-pdf-link:hover {
+  text-decoration: none;
+}
+/* Add this CSS to your stylesheet or component styles */
+.filter-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Style for the dropdown arrow */
+select::-ms-expand {
+  display: none;
+}
+
+/* Style for the dropdown arrow in webkit browsers */
+select::-webkit-select {
+  display: none;
+}
+
+/* Style for the dropdown arrow in modern browsers */
+select::-webkit-outer-spin-button,
+select::-webkit-inner-spin-button {
+  display: none;
+}
+
+/* Optional: Add some hover and focus styles */
+select:hover,
+select:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Overlay styling */
+.iframe-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.85); /* Darker overlay */
+  transition: opacity 0.3s ease; /* Smooth fade-in */
+}
+
+/* Iframe container */
+.iframe-container {
+  width: 80%; /* Responsive width */
+  max-width: 600px; /* Book-like size cap */
+  padding: 20px;
+  background-color: #ffffff; /* White card background */
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Soft, elevated shadow */
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+/* Iframe styling */
+.iframe-content {
+  width: 100%; /* Full container width */
+  height: 70vh; /* Book-like height */
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth transitions */
+}
+
+/* Close button styling */
+.close-pdf-button {
+  background-color: #4a90e2;
+  color: #ffffff;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%; /* Full-width button */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Hover effects */
+}
+
+/* Button hover and active effects */
+.close-pdf-button:hover {
+  background-color: #357ab7;
+  transform: scale(1.03); /* Slight scaling effect */
+}
+
+.close-pdf-button:active {
+  background-color: #285a8c;
+  transform: scale(0.98); /* Slight "press" effect */
+}
