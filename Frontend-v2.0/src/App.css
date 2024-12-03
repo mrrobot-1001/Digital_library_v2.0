@@ -1,0 +1,118 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Slide-in and fade-in transitions */
+.slide-enter {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.slide-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+}
+.slide-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.slide-exit-active {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+section1 {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
+
+/* Typewriter Effect */
+.line-1 {
+  position: relative;
+  width: 30em; /* Increased width for larger text */
+  margin: 0 auto;
+  border-right: 3px solid rgba(255, 255, 255, 0.85); /* Thicker border for visibility */
+  font-size: 3rem; /* Larger font size */
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 1.2; /* Prevent chopping at the bottom */
+  padding: 0.2em 0; /* Extra padding to avoid text clipping */
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 3s steps(60, end) 1s 1 normal both, /* Smooth typing */
+             blinkTextCursor 700ms steps(60, end) 100; /* Cursor blinks 6 times, then stops */
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 12em; /* Match width of .line-1 */
+  }
+}
+
+@keyframes blinkTextCursor {
+  0% {
+    border-right-color: rgba(255, 255, 255, 0.85);
+  }
+  50% {
+    border-right-color: transparent;
+  }
+  100% {
+    border-right-color: rgba(255, 255, 255, 0.85);
+  }
+}

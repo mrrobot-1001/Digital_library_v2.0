@@ -1,0 +1,116 @@
+/* AdminDashboard.css */
+
+/* Sidebar Container */
+.admin-dashboard {
+  background-color: #2a2e3b; /* Dark background color */
+  color: #fff; /* Text color */
+  width: 250px; /* Sidebar width */
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  transition: width 0.3s ease; /* Smooth width transition */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Increased sidebar shadow for depth */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align content vertically */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+/* Logo Style */
+.logo {
+  text-align: center;
+  font-size: 1.8rem; /* Larger logo text */
+  margin: 20px 0; /* Add margin to top and bottom */
+  color: #ff9900; /* Accent color for the logo */
+  font-weight: bold; /* Make the logo text bold */
+  text-transform: uppercase; /* Uppercase logo text */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the left */
+  margin-top: 20px; /* Increased space between logo and links */
+}
+
+.nav-links li {
+  margin-bottom: 15px; /* Increased space between links */
+}
+
+/* NavLink Styles */
+.nav-links a {
+  display: block;
+  padding: 12px 20px; /* Spacing around text */
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px; /* Slightly smaller font size */
+  border-radius: 8px; /* Rounded corners for links */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease-in-out; /* Smooth transitions */
+  transform-origin: 0% 50%; /* Adjust transform origin for a better animation effect */
+}
+
+.nav-links a:hover {
+  background-color: #ff9900; /* Hover background color */
+  color: #333; /* Hover text color */
+  transform: scale(1.05); /* Slight scale on hover for an aesthetic effect */
+}
+
+/* Active Link Style */
+.nav-links a.active {
+  background-color: #ff9900; /* Active link background color */
+  color: #333; /* Active link text color */
+  font-weight: bold;
+}
+
+/* Dark-themed button styles */
+.dark-button {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 8px; /* Rounded corners for the button */
+  padding: 12px 24px; /* Increased padding */
+  font-size: 18px; /* Larger font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease-in-out; /* Smooth transitions */
+  overflow: hidden; /* Hide overflowing content during the animation */
+}
+
+.dark-button:hover {
+  background-color: #555; /* Darker background color on hover */
+  color: #fff; /* White text color on hover */
+  transform: scale(1.1); /* Increased scale on hover for a more pronounced effect */
+}
+
+/* FontAwesome icon styles (adjust the color as needed) */
+.dark-button svg {
+  font-size: 20px; /* Larger icon size */
+  margin-right: 10px; /* Reduced spacing between the icon and text */
+  color: #fff; /* White icon color */
+}
+
+/* Optional: Add a box shadow for a subtle lift effect */
+.dark-button {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Optional: Advanced Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dark-button, .nav-links a {
+  animation: fadeIn 0.5s ease-in-out; /* Apply animation to buttons and links */
+}
